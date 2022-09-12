@@ -1,14 +1,12 @@
 .item {
   margin: 1rem 0;
-  background-color: white;
-  border-style: solid;
-  border-color: black;
+  border-style: groove;
   padding: 1rem;
 }
 
 .item h3 {
   margin: 0 0 0.5rem 0;
-  font-size: 1.75rem;
+  font-size: 1rem;
 }
 
 .item header {
@@ -47,10 +45,10 @@
 
 .actions button {
   background-color: transparent;
-  border: 1px solid black;
+  border: 1px solid #252424;
   margin-left: 0.5rem;
   padding: 0.15rem 1rem;
-  color: black;
+  color: #252424;
 }
 
 .actions button:hover,

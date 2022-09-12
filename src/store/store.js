@@ -1,11 +1,13 @@
 import { configureStore } from "@reduxjs/toolkit";
 import cartSlice from "./cartSlice";
+import notificationSlice from "./notificationSlice";
 
 
-const store = configureStore({
+const Store = configureStore({
     reducer: {
-        cart: cartSlice.reducer
+        cart: cartSlice.reducer,
+        notification: notificationSlice.reducer
     }
 })
 
-export default store;
+export default Store
