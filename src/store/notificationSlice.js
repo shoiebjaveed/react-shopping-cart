@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const notificationSlice = createSlice({
     name: 'notification',
-    initialState: { notification: null },
+    initialState: { notification: null, visible: false  },
     reducers: {
         addNotification: (state, action) => {
             state.notification = {
@@ -11,7 +11,11 @@ const notificationSlice = createSlice({
                 title: action.payload.title,
                 message: action.payload.message,
             }
-        }
+        },
+        toggleCart: (state, action) => {
+            state.visible = !state.visible
+        },
+
     }
 })
 

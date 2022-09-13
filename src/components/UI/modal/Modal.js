@@ -1,17 +1,15 @@
 import { Fragment } from 'react';
 import ReactDom from 'react-dom'
 import { useDispatch } from 'react-redux';
-import { cartAction } from '../../../store/cartSlice';
+import { notificationActions } from '../../../store/notificationSlice';
 import classes from './Modal.module.css';
-
-
 
 
 const Backdrop = () => {
     const dispatch = useDispatch();
 
     const cartToggleHandler = () => {
-        dispatch(cartAction.toggleCart())
+        dispatch(notificationActions.toggleCart())
     }
     
     return <div className={classes.backdrop} onClick={cartToggleHandler} />

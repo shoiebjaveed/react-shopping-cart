@@ -18,6 +18,8 @@ const CartItem = (props) => {
     dispatch(cartAction.removeItem(id))
   }
 
+  
+
   return (
     <li className={classes.item}>
       <header>
@@ -26,7 +28,6 @@ const CartItem = (props) => {
           ${total.toFixed(2)}{' '}
           <span className={classes.itemprice}>(${price.toFixed(2)}/item)</span>
         </div>
-        <button onClick={() => dispatch(cartAction.deleteItem())}>remove</button>
       </header>
       <div className={classes.details}>
         <div className={classes.quantity}>

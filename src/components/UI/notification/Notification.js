@@ -3,15 +3,11 @@ import classes from './Notification.module.css';
 const Notification = (props) => {
   let specialClasses = '';
 
-  if (props.status === 'pending') {
-    specialClasses = classes.pending;
-  }
-
   if (props.status === 'error') {
     specialClasses = classes.error;
   }
   if (props.status === 'success') {
-    specialClasses = classes.success;
+    specialClasses = classes.success
   }
 
   const cssClasses = `${classes.notification} ${specialClasses}`;

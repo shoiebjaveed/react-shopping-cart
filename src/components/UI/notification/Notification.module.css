@@ -15,10 +15,6 @@
   margin: 0;
 }
 
-.pending {
-  background-color: #1a8ed1;
-}
-
 .error {
   background-color: #690000;
 }
